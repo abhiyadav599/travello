@@ -5,7 +5,7 @@ from django.contrib.auth.models import User, auth
 
 def logout(request):
     auth.logout(request)
-    return redirect('/')
+    return redirect("/")
 
 def login(request):
     if request.method == 'POST':
